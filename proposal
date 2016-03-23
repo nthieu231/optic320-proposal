@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, potrait, margin=1in]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{float}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Page \thepage}
+\chead{\Date{\today}}
+\lhead{Memo to Dr. Neven Simicevic}
+\rfoot{}
+
+\begin{document}
+
+    \section*{Memo}
+        
+        \begin{tabular}{ l l }
+            Date:       & \Date{\today} \\
+            To:         & Dr. Neven Semicivic \\
+                        & Louisiana Tech University \\
+            From:       & Gabriel Emerson \\
+                        & Abdullah Nammari \\
+                        & Hieu Nguyen \\
+                        & Louisiana Tech University \\
+            Subject:    & Proposal for Brewster's Angle Study      
+        \end{tabular}
+
+    \section*{Purpose}
+    
+        The purpose of this proposal is to appeal authorization to purchase the laboratory equipment for the study of Brewster’s Angle.
+        
+    \section*{Summary}
+    
+        On March 17, 2016, Dr. Neven Simicevic assigned our team to conduct the study of Brewster’s Angle.
+        
+        The principle of Brewster’s Angle is applied in improving items and devices we usually use, such as sunglasses, cars’ windows, and cameras; therefore, it has been highly interested by researchers. Undergraduate students in Science and Engineering majors are given opportunity to study this phenomenon through giving lectures and providing reading materials. However, in order to gain insight into Brewster’s Angle, it is necessary for students to have experience with measuring Brewster’s Angle using appropriate equipment. Through this study, not only students will acquire deeper understanding on the Brewster’s Angle but they also can practice their writing report skill on the subject.
+        
+        ...
+
+    \section*{Introduction}
+        Mention theory
+        
+        Snell's law:
+        \begin{equation} \label{snell}
+            n_1 \sin \theta_1=n_2 \sin \theta_2
+        \end{equation}
+        
+        Apply Snell's law to Brewster's Angle $\theta_p$:
+        \begin{equation} \label{brewster-snell}
+            n_1 \sin \theta_p=n_2 \sin \theta_2
+        \end{equation}
+        
+        Since Brewster's Angle properties indicate that $\theta_p + \theta_2 = 90^\circ$, we conclude:
+        \begin{equation} \label{brewster's angle}
+            \tan \theta_p = \frac{n_2}{n_1}
+        \end{equation}
+        
+    \section*{Budget}
+        \begin{table}[]
+            \centering
+            \begin{tabular}{|l|r|}
+                \hline
+                Brewster's Angle Accessory (OS-8170A)   & \$ 399\\
+                \hline
+                Educational Spectrophotometer Accessory Kit (OS-8537) & \$ 689\\
+                \hline
+                Optics Benches (60 cm) (OS-8541)        & \$ 59\\
+                \hline
+                PASPORT Rotary Motion Sensor (PS-2120A) & \$ 169\\
+                \hline
+                PASPORT High Sensitivity Light Sensor (PS-2176)       & \$ 179\\
+                \hline
+                Aperture Bracket (OS-8534A)             & \$ 89\\
+                \hline
+                Diode Laser -- Basic Optics (OS-8525A)  & \$ 199\\
+                \hline
+                550 Universal Interface (UI-5001)       & \$ 489\\
+                \hline
+                PASCO Capstone Single User License (UI-5401)          & \$ 99\\
+                \hline
+
+                Total                                   & \$ 2371\\
+                \hline
+                \hline
+                Brewster's Angle Experiment (EX-5544A)  & \$ 2169\\
+                \hline
+            
+            \end{tabular}
+            \caption{Budget for Brewster's Angle experiment in term of components.}
+            \label{budget}
+        \end{table}
+        
+        
+        
+    \section*{Proposed Tasks}
+        \subsection*{Set Up}
+            \begin{enumerate}
+                \item Set up the Spectrophotometer; assemble laser diode, polarizers, and     collimating splits.
+                \item Put Spectrophotometer disk on "backward" position.
+                \item Adjust the two polarizers.
+                \item Adjust the square analyzing polarizer.
+                \item Polarize the laser light at 45°
+                \item Zero the Brewster’s Angle base disk.
+                \item ...
+                \item ...
+                \item ...
+                
+            \end{enumerate}
+        \subsection*{Procedures}
+            \begin{enumerate}
+                \item Zero the angle for Rotatory Motion Angle.
+                \item Turn out the room light.
+                \item ...
+                \item ...
+                \item ...
+                
+            \end{enumerate}
+    \section*{Schedule}
+        \Date{\today}}
+    \section*{Experience}
+        We are students of Louisiana Tech University who are qualified to perform this study under the instruction of Dr. Neven Simicevic and present our recommendation:
+        \begin{itemize}
+            \item Gabriel Emerson, B. SC.
+            \item Abdullah Nammari, B. SC. 
+            \item Hieu Nguyen, B. SC. Nanosystems Engineering.
+        \end{itemize}
+    \section*{References}
+        \url{https://www.pasco.com/prodCompare/brewsters-angle-experiment/index.cfm}
+ 
+\end{document}
