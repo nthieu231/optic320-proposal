@@ -5,6 +5,12 @@
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage{float}
+\restylefloat{table}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\bibliographystyle{ieeetr}
+
+
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -16,118 +22,154 @@
 \begin{document}
 
     \section*{Memo}
-        
-        \begin{tabular}{ l l }
-            Date:       & \Date{\today} \\
-            To:         & Dr. Neven Semicivic \\
-                        & Louisiana Tech University \\
-            From:       & Gabriel Emerson \\
-                        & Abdullah Nammari \\
-                        & Hieu Nguyen \\
-                        & Louisiana Tech University \\
-            Subject:    & Proposal for Brewster's Angle Study      
-        \end{tabular}
+        \begin{table}[H]
+            \begin{tabular}{ l l }
+                Date:       & \Date{\today} \\
+                To:         & Dr. Neven Semicivic \\
+                            & Louisiana Tech University \\
+                From:       & Gabriel Emerson \\
+                            & Abdullah Nammari \\
+                            & Hieu Nguyen \\
+                            & Louisiana Tech University \\
+                Subject:    & Proposal for Brewster's Angle Study \\
+            \end{tabular}
+            \label{memo}
+        \end{table}
 
     \section*{Purpose}
     
-        The purpose of this proposal is to appeal authorization to purchase the laboratory equipment for the study of Brewster’s Angle.
+        The purpose of this proposal is to request authorization to purchase the laboratory equipment for the study of the Brewster’s Angle.
         
     \section*{Summary}
     
         On March 17, 2016, Dr. Neven Simicevic assigned our team to conduct the study of Brewster’s Angle.
         
-        The principle of Brewster’s Angle is applied in improving items and devices we usually use, such as sunglasses, cars’ windows, and cameras; therefore, it has been highly interested by researchers. Undergraduate students in Science and Engineering majors are given opportunity to study this phenomenon through giving lectures and providing reading materials. However, in order to gain insight into Brewster’s Angle, it is necessary for students to have experience with measuring Brewster’s Angle using appropriate equipment. Through this study, not only students will acquire deeper understanding on the Brewster’s Angle but they also can practice their writing report skill on the subject.
+        Undergraduate students in Science and Engineering majors are given opportunity to study Brewster's Angle by providing Physics related classes. A rational understanding of the phenomenon can be develop by enrolling in the classes; however, an integrated knowledge of the phenomenon requires both a reasonable theoretical background and experience in doing the Brewster's Angle experiment. Hence, it is necessary for students to have experience with measuring Brewster’s Angle using appropriate equipment in order to gain more insight into the subject than either attending lectures exclusively or doing the experiment without adequate equipment.
         
-        ...
 
     \section*{Introduction}
-        Mention theory
+    
+        We experience reflected light in our everyday life; and yet, it is still striking to most of us that under certain circumstances, an interface can have zero reflection, even though it reflects light in most of the cases. Specifically, if the interface is shine by a light source under certain incident angle, no reflection occurs. This angle is called Brewster's Angle and will be the subject of our study.
         
-        Snell's law:
+    \section*{Theory}
+        
+        According to Snell's law:
         \begin{equation} \label{snell}
             n_1 \sin \theta_1=n_2 \sin \theta_2
         \end{equation}
-        
         Apply Snell's law to Brewster's Angle $\theta_p$:
         \begin{equation} \label{brewster-snell}
             n_1 \sin \theta_p=n_2 \sin \theta_2
         \end{equation}
-        
         Since Brewster's Angle properties indicate that $\theta_p + \theta_2 = 90^\circ$, we conclude:
         \begin{equation} \label{brewster's angle}
             \tan \theta_p = \frac{n_2}{n_1}
         \end{equation}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=10cm]{optfig_snell}
+            \caption{A visualization of Snell's law under Brewster's Angle. If the interface had been shined under an incident angle other than $\theta_p$, the incident angle would have been simply $\theta_1$\cite{pasco}.}
+        \end{figure}
+        
         
     \section*{Budget}
-        \begin{table}[]
+        Costs of the package and each of its components are listed in table \ref{budget}.
+        \begin{table}[H]
             \centering
-            \begin{tabular}{|l|r|}
+            
+            \begin{tabular}{|c|l|l|r|}
                 \hline
-                Brewster's Angle Accessory (OS-8170A)   & \$ 399\\
+                \textbf{No.} & \textbf{Package} & \textbf{Product number} & \textbf{Price}\\
                 \hline
-                Educational Spectrophotometer Accessory Kit (OS-8537) & \$ 689\\
+                1 & Brewster's Angle Experiment & EX-5544A & \$ 2169\\
                 \hline
-                Optics Benches (60 cm) (OS-8541)        & \$ 59\\
+                
+                \multicolumn{4}{l}{included:}\\
+                
                 \hline
-                PASPORT Rotary Motion Sensor (PS-2120A) & \$ 169\\
+                \textbf{No.} & \textbf{Component} & \textbf{Product number} & \textbf{Price}\footnotemark[1]\\
                 \hline
-                PASPORT High Sensitivity Light Sensor (PS-2176)       & \$ 179\\
+                1 & Brewster's Angle Accessory & OS-8170A & \$ 399\\
                 \hline
-                Aperture Bracket (OS-8534A)             & \$ 89\\
+                1 & Educational Spectrophotometer Accessory Kit & OS-8537 & \$ 689\\
                 \hline
-                Diode Laser -- Basic Optics (OS-8525A)  & \$ 199\\
+                1 & Polarizer Set & OS-8473 & \$ 59\\
                 \hline
-                550 Universal Interface (UI-5001)       & \$ 489\\
+                2 & Optics Bench (60 cm) & OS-8541 & \$ 59\\
                 \hline
-                PASCO Capstone Single User License (UI-5401)          & \$ 99\\
+                1 & Rotary Motion Sensor & PS-2120 & \$ 169\\
                 \hline
-
-                Total                                   & \$ 2371\\
+                2 & High Sensitivity Light Sensor & PS-2176 & \$ 179\\
                 \hline
+                2 & Aperture Bracket for Light Sensor & OS-8534  & \$ 89\\
                 \hline
-                Brewster's Angle Experiment (EX-5544A)  & \$ 2169\\
+                1 & Red Diode Laser & OS-8525A & \$ 199\\
+                \hline
+            
+                \multicolumn{4}{l}{Required, but not included:}\\
+            
+                \hline
+                1 & Green Diode Laser (Optional) & OS-8458 & \$ 299\\
+                \hline
+                1 & 850 Universal Interface & UI-5000 & \$ 999\\
+                \hline
+                1 & PASCO Capstone Software & UI-5400 & \$ 999\\
+                \hline
+                1 & 550 Universal Interface (Optional)\footnotemark[2] & UI-5001 & \$ 489\\
+                \hline
+                1 & PASCO Capstone Software (Optional)\footnotemark[3] & UI-5406 & \$ 649\\
                 \hline
             
             \end{tabular}
-            \caption{Budget for Brewster's Angle experiment in term of components.}
+            \caption{Budget for Brewster's Angle experiment in term of components\cite{pasco}.}
             \label{budget}
         \end{table}
         
+        \footnotetext[1]{Price of one component regardless of their number of required components for the experiment.}
+        \footnotetext[2]{An alternative to 850 Universal Interface (UI-5000)}
+        \footnotetext[3]{An alternative to PASCO Capstone Software (UI-5400)}
         
+        %need to find the Universal Interface and the Capstone Software for individual use.
         
     \section*{Proposed Tasks}
         \subsection*{Set Up}
             \begin{enumerate}
-                \item Set up the Spectrophotometer; assemble laser diode, polarizers, and     collimating splits.
+                \item Set up the Spectrophotometer; assemble laser diode, polarizers, and collimating splits.
                 \item Put Spectrophotometer disk on "backward" position.
                 \item Adjust the two polarizers.
                 \item Adjust the square analyzing polarizer.
-                \item Polarize the laser light at 45°
+                \item Polarize the laser light at 45°.
                 \item Zero the Brewster’s Angle base disk.
-                \item ...
-                \item ...
-                \item ...
+                \item Align the laser beam.
+                \item Plug the Light into Channel A and the Rotary Motion Sensor into Channels 1 & 2 on the ScienceWorkshop 500 interface. Open the DataStudio file "Brewsters."
                 
             \end{enumerate}
         \subsection*{Procedures}
             \begin{enumerate}
                 \item Zero the angle for Rotatory Motion Angle.
-                \item Turn out the room light.
-                \item ...
-                \item ...
-                \item ...
+                \item Turn out the room light. Click on START. Set angle to 85 degrees and rotate the Brewster disk to about 85. Rotate the first polarizer to be as high as possible without exceeding 90percent.
+                \item Enter the angle into the table and record the light intensity under "Total Light" column.
+                \item Remove the analyzing polarizer. Observe the intensity approaching the minimum and record data every 1 degree near the minimum.
+                \item Click on "Fit" and choose the polynomial fit. The Brewster's angle is the angle at which the reflection is a minimum.
                 
             \end{enumerate}
     \section*{Schedule}
-        \Date{\today}}
+        The experiment is conducted on March 24, 2016. A report will be submitted to Dr. Neven Simicevic one week after the experiment.
+        
     \section*{Experience}
         We are students of Louisiana Tech University who are qualified to perform this study under the instruction of Dr. Neven Simicevic and present our recommendation:
         \begin{itemize}
-            \item Gabriel Emerson, B. SC.
-            \item Abdullah Nammari, B. SC. 
+            \item Gabriel Emerson, B. SC. Mathematics.
+            \item Abdullah Nammari, B. SC. Nanosystems Engineering.
             \item Hieu Nguyen, B. SC. Nanosystems Engineering.
         \end{itemize}
-    \section*{References}
-        \url{https://www.pasco.com/prodCompare/brewsters-angle-experiment/index.cfm}
+    
+    \begin{thebibliography}{2}
+        \bibitem{pasco} 
+        "Brewster's Angle Experiment: PASCO", \textit{Pasco.com}, 2016. [Online]. Available: \url{https://www.pasco.com/prodCompare/brewsters-angle-experiment/index.cfm}. [Accessed: 24- Mar- 2016].
+         
+    \end{thebibliography}
+
+        
  
 \end{document}
